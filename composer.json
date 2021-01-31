@@ -1,0 +1,23 @@
+{
+    "name": "dynopress/dynopress",
+    "description": "(Experimental) WordPress on DynamoDB.",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "wpackagist-theme/twentytwentyone": "*"
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
+    }
+}
